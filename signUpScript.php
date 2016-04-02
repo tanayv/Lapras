@@ -1,6 +1,5 @@
 <?php
     
-    
     /*
         Name: signUpScript.php
         Function: Obtains name, email, customerID and password as parameters and pushes them into the database.
@@ -16,6 +15,8 @@
     //$query1 = mysqli_query($connection, "SELECT * FROM userData");
     
     mysqli_query($connection, "INSERT INTO userData (name, email, customerID, password) VALUES ('$fullName', '$email', '$customerID', '$password')");
-    echo "<script type = 'text/javascript'>window.location.assign('/');</script>";
+    session_start();
+    $_SESSION['customerID'] = $customerID;
+    echo "<script type = 'text/javascript'>window.location.assign('index.php');</script>";
 
 ?>
