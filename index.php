@@ -15,8 +15,13 @@
 
 		<div id='sign'>
 
-			<form method='post' action='signUpScript.php'>
-
+			<form method='post' action='signInScript.php'>
+                <?php 
+                
+                if ($_GET['error'] == 1)
+                    echo "Incorrect password";
+                
+                ?>
 				<input id='mail' type='email' name='email' placeholder='Email ID'>
 				<input id='psswd' type='password' name='password' placeholder='Password'>
 				<input id='bttn' type="submit" value='SIGN IN'>

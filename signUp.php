@@ -17,10 +17,10 @@
 
 			<form method='post' action='signUpScript.php'>
 
-				<input id='naam' type='text' name='naam' placeholder='Name'>
-				<input id='acct' type='text' name='acct' placeholder='Account Number'>
+				<input id='naam' type='text' name='name' placeholder='Name'>
+				<input id='acct' type='text' name='custID' placeholder='Account Number'>
 				<input id='mail' type='email' name='email' placeholder='Email ID'>
-				<input id='psswd' type='password' name='password' placeholder='Password'>
+				<input id='psswd' type='password' name='pass1' placeholder='Password'>
 				<input id='bttn' type="submit" value='SIGN UP'>
 
 			</form>
