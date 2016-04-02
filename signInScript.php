@@ -1,7 +1,6 @@
 <?php
 
     include 'engine/connection.php';
-    
     $email = $_POST['email'];
     $password = $_POST['password'];
     
@@ -13,6 +12,7 @@
     }
     
     if (strcmp($password, $passCorrect)==0) {
+        session_start();
         $_SESSION['customerID'] = $customerID;
         echo "<script type = 'text/javascript'>window.location.assign('/');</script>";
     }

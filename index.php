@@ -1,4 +1,14 @@
 <?php
+
+	session_start();
+	$loadCustID = $_SESSION['customerID'];
+	
+	if (!empty($loadCustID)) {
+		echo "<script type = 'text/javascript'>window.location.assign('dashboard.php');</script>";
+	}
+	
+	else {
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -20,7 +30,7 @@
                 
                 if ($_GET['error'] == 1)
                     echo "<span id='err_msg'>Incorrect Email ID or Password</span>";
-                
+                 
                 ?>
 				<input id='mail' type='email' name='email' placeholder='Email ID'>
 				<input id='psswd' type='password' name='password' placeholder='Password'>
@@ -36,3 +46,7 @@
 
 </body>
 </html>
+<?php 
+}
+
+?>
