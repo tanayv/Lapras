@@ -38,7 +38,7 @@
 
 			</form>
 
-			<a href="signUp.php">SIGN UP</a>
+			<a href='signUp.php'>SIGN UP</a>
 
 		</div>
 

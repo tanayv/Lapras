@@ -20,7 +20,8 @@
 
 body {
 	font-family: 'Gotham Light';
-	background: #F9F9F9;
+	background: #F7F7F7;
+	/*background: #00ADB5;*/
 }
 
 #container {
@@ -106,3 +107,4 @@ form {
     position: relative;
     bottom: -20px;
 }
+
