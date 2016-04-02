@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('assets/Gotham-Light.otf');
+}
+
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('assets/Gotham-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Porto';
+    src: url('assets/Porto 400.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Porto';
+	/*background: #20262D;*/
+	background: #F9F9F9;
+}
+
+#container {
+	margin: auto;
+	width: 40%;
+	padding: 50px;
+	color: #00ADB5;
+	text-align: center;
+}
+
+#container h1 {
+	position: relative;
+	top: 25px;
+}
+
+#sign_in {
+	/*background: #1D2229;*/
+	background: #FFF;
+	padding: 50px;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	top: 90px;
+}
+
+#sign_in input[type=email], input[type=password] {
+	width: 70%;
+	/*background: #1D2229;*/
+	background: #FFF;
+	border: none;
+	border-bottom: solid 1px #EAEAEA;
+	color: #EAEAEA;
+	padding: 15px;
+	margin: 15px;
+	font-family: 'Gotham Light';
+	font-size: 14px;
+}
+
+#si_bttn {
+	width: 70%;
+	background: #00ADB5;
+	color: #FFF;
+	padding: 15px;
+	margin: 20px;
+	font-family: 'Gotham Bold';
+	border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#si_bttn:active {
+	border: none;
+}
+
