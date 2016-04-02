@@ -20,7 +20,6 @@
 
 body {
 	font-family: 'Porto';
-	/*background: #20262D;*/
 	background: #F9F9F9;
 }
 
@@ -33,20 +32,19 @@ body {
 
 #container h1 {
 	position: relative;
-	bottom: -70px;
+	bottom: -50px;
 }
 
-#sign_in {
+#sign {
 	background: #FFF;
 	position: relative;
 	margin: auto;
 	text-align: center;
-	bottom: -130px;
-	min-height: 320px;
-	padding: 15px;
+	bottom: -100px;
+	padding-bottom: 85px;
 }
 
-#mail, #psswd {
+#acct, #naam, #mail, #psswd {
 	width: 70%;
 	background: #FFF;
 	border: none;
@@ -62,12 +60,12 @@ body {
 	letter-spacing: 1px;
 }
 
-#si_bttn {
+#bttn {
 	width: 70%;
 	background: #00ADB5;
 	color: #FFF;
 	position: relative;
-	bottom: -60px;
+	bottom: -40px;
 	padding: 15px 0;
 	margin: 10px;
 	font-family: 'Gotham Bold';
@@ -77,12 +75,12 @@ body {
     letter-spacing: 1px;
 }
 
-#mail:focus, #psswd:focus {
+#acct:focus, #naam:focus, #mail:focus, #psswd:focus {
 	outline: none;
 	border-bottom: solid 1px #00ADB5;
 }
 
-#si_bttn:focus {
+#bttn:focus {
 	outline: none;
 }
 
@@ -90,13 +88,13 @@ form {
 	display: block;
 }
 
-#sign_in a {
+#sign a {
 	text-decoration: none;
 	font-family: 'Gotham Bold';
 	color: #1D2229;
 	font-size: 14px;
 	padding: 5px;
 	position: relative;
-	bottom: -75px;
+	bottom: -55px;
 	letter-spacing: 1px;
 }
