@@ -46,7 +46,7 @@
 
             <form method='post' action='bot.php'>
 
-                <input class='bot' type='text' name='bot' placeholder='Speak, human...'>
+                <input class='bot' type='text' name='userMsg' placeholder='Speak, human...'>
                 <input id='bot-submit' type='submit'>   
 
             </form>
