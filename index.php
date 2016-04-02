@@ -19,7 +19,7 @@
                 <?php 
                 
                 if ($_GET['error'] == 1)
-                    echo "Incorrect password";
+                    echo "<span id='err_msg'>Incorrect Email ID or Password</span>";
                 
                 ?>
 				<input id='mail' type='email' name='email' placeholder='Email ID'>

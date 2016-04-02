@@ -19,7 +19,7 @@
 }
 
 body {
-	font-family: 'Porto';
+	font-family: 'Gotham Light';
 	background: #F9F9F9;
 }
 
@@ -32,6 +32,7 @@ body {
 
 #container h1 {
 	position: relative;
+	font-family: 'Porto';
 	bottom: -50px;
 }
 
@@ -97,4 +98,11 @@ form {
 	position: relative;
 	bottom: -55px;
 	letter-spacing: 1px;
+}
+
+#err_msg {
+    font-size: 14px;
+    color: #DE233A;
+    position: relative;
+    bottom: -20px;
 }
