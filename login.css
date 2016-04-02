@@ -27,52 +27,76 @@ body {
 #container {
 	margin: auto;
 	width: 40%;
-	padding: 50px;
 	color: #00ADB5;
 	text-align: center;
 }
 
 #container h1 {
 	position: relative;
-	top: 25px;
+	bottom: -70px;
 }
 
 #sign_in {
-	/*background: #1D2229;*/
 	background: #FFF;
-	padding: 50px;
 	position: relative;
 	margin: auto;
 	text-align: center;
-	top: 90px;
+	bottom: -130px;
+	min-height: 320px;
+	padding: 15px;
 }
 
-#sign_in input[type=email], input[type=password] {
+#mail, #psswd {
 	width: 70%;
-	/*background: #1D2229;*/
 	background: #FFF;
 	border: none;
 	border-bottom: solid 1px #EAEAEA;
-	color: #EAEAEA;
-	padding: 15px;
-	margin: 15px;
+	color: #1D2229;
+	position: relative;
+	bottom: -20px;
+	padding: 15px 0;
+	margin: 10px;
 	font-family: 'Gotham Light';
 	font-size: 14px;
+	transition: all 0.2s;
+	letter-spacing: 1px;
 }
 
 #si_bttn {
 	width: 70%;
 	background: #00ADB5;
 	color: #FFF;
-	padding: 15px;
-	margin: 20px;
+	position: relative;
+	bottom: -60px;
+	padding: 15px 0;
+	margin: 10px;
 	font-family: 'Gotham Bold';
 	border: none;
     font-size: 14px;
     cursor: pointer;
+    letter-spacing: 1px;
 }
 
-#si_bttn:active {
-	border: none;
+#mail:focus, #psswd:focus {
+	outline: none;
+	border-bottom: solid 1px #00ADB5;
 }
 
+#si_bttn:focus {
+	outline: none;
+}
+
+form {
+	display: block;
+}
+
+#sign_in a {
+	text-decoration: none;
+	font-family: 'Gotham Bold';
+	color: #1D2229;
+	font-size: 14px;
+	padding: 5px;
+	position: relative;
+	bottom: -75px;
+	letter-spacing: 1px;
+}

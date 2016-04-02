@@ -1,6 +1,5 @@
 <?php
 ?>
-<!DOCTYPE HTML>
 <html>
 <head>
 	<title>Lapras</title>
@@ -11,13 +10,19 @@
 
 	<div id='container'>
 
-		<h1>Lapras1</h1>
+		<h1>Lapras</h1>
 
 		<div id='sign_in'>
 
-			<input id='mail' type='email' name='email' placeholder='Email ID'>
-			<input id='psswd' type='password' name='password' placeholder='Password'>
-			<input id='si_bttn' type='button' value='SIGN IN'>
+			<form>
+
+				<input id='mail' type='email' name='email' placeholder='Email ID'>
+				<input id='psswd' type='password' name='password' placeholder='Password'>
+				<button id='si_bttn' type="button">SIGN IN</button>
+
+			</form>
+			
+			<a href="#">SIGN UP</a>
 
 		</div>
 
