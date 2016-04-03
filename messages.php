@@ -15,13 +15,99 @@
         
         
         if ($sender == 1) { //Message from bot
-        echo "<p align='left'><b>Lapras</b><br>$content<br>$timest<br></p>";
+        echo "<p class='bot-msg'><b>Lapras</b><br>$content<br>$timest<br></p>";
         }
         
         elseif ($sender == 0 ) { //Message from user
-        echo "<p align='right'><b>You</b><br>$content<br>$timest<br></p>";
+        echo "<p class='msg'><b>You</b><br>$content<br>$timest<br></p>";
         }
         
     }
 
 ?>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Lapras | Bank Statements</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <meta charset='UTF-8'>
+</head>
+<body>
+
+    <div class='container'>
+
+        <div id='bot-overlay' class='overlay'>
+
+          <a href='javascript:void(0)' class='closebtn' onclick='closeNav()'>×</a>
+
+          <div class='overlay-content'>
+
+            <form method='post' action='bot.php'>
+
+                <input id='user-msg' class='bot' type='text' name='userMsg' placeholder='Speak, human...'>
+                <input onclick='moveTextBox()' id='bot-submit' type='submit'>   
+
+            </form>
+
+          </div>
+
+        </div>
+
+        <!-- <img class='bot-gif' onclick='openNav()' src='assets/lapras-repeat.gif'> -->
+
+        <div class='top-nav'>
+
+            <div class='top-nav-content'>
+
+                <img src='assets/profile.png'>
+                <p>Siddharth Bhogra</p>
+
+            </div>
+
+            <div class='up'>
+
+                <p>BANK STATEMENTS</p>
+
+            </div>
+
+        </div>
+
+        <div class='side-nav'>
+
+            <div class='logo'>
+
+                <img src="assets/logo.png">
+
+            </div>
+
+            <ul>
+                <li><a href='dashboard.php'><img src='assets/home.png'>HOME</a></li>
+                <li><a href='statement.php'><img src='assets/vault.png'>BANK STATEMENTS</a></li>
+                <li><a href='messages.php'><img src='assets/message.png'>MESSAGES</a></li>
+            </ul>
+
+            <div class='sign-out'>
+
+                <a href='signOutScript.php'>SIGN OUT</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script type='text/javascript'>
+        function openNav() {
+            document.getElementById('bot-overlay').style.height = '100%';
+        }
+        function closeNav() {
+            document.getElementById('bot-overlay').style.height = '0%';
+        }
+        function moveTextBox() {
+            document.getElementById('user-msg').style.top = '80%';
+        }
+    </script>
+
+</body>
+</html>

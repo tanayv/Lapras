@@ -433,3 +433,17 @@ th {
 	font-family: 'Gotham Bold';
 	font-weight: normal;
 }
+
+.bot-msg {
+	float: left;
+	padding: 10px 20px;
+	background: #FFF;
+}
+
+.msg {
+	float: right;
+	padding: 10px 20px;
+	background: #00ADB5;
+	color: #FFF;
+}
+
