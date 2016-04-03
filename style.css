@@ -172,12 +172,13 @@ body {
 
 #upcoming {
 	position: relative;
-	top: 210px;
+	float: left;
+	/*top: 210px;*/
 	padding-bottom: 20px;
 	padding-left: 20px;
 	left: 25%;
-	width: 70%;
-	border-bottom: solid 1px rgba(29, 34, 41, 0.07);
+	width: 30%;
+	/*border-bottom: solid 1px rgba(29, 34, 41, 0.07);*/
 }
 
 .pay p {
@@ -215,10 +216,11 @@ body {
 
 #paid {
 	position: relative;
-	top: 230px;
+	/*top: 230px;*/
+	float: left;
 	padding-left: 20px;
 	left: 25%;
-	width: 70%;
+	width: 30%;
 	margin-bottom: 20px;
 }
 
