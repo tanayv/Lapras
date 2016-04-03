@@ -55,31 +55,24 @@
         $secondLvlKeywords = array("this week", "last week", "this month");
             
             //First level lookup
-            $actionMsg = strtolower($userMsg);
+            $action1 = -1;
             
-            for ($j = 0; $j < sizeof($firstLvlKeywords); $j++)
+            for ($j = 0; $j < 4; $j++)
                 for ($k = 0; $k < 4; $k++) {
-                    
-                    if (strpos($actionMsg, $firstLvlKeywords[$j][$k])!=false) {
+                    if (stripos($userMsg, $firstLvlKeywords[$j][$k]) !== false ) {
+                        //echo "Match Found -> ($j, $k) <br>";
                         $action1 = $j;
                     }
                 }
-        
-            //Second level lookup
-                $durationFlag = false;
-                for ($l = 0; $l < 3; $l++) {
-                    
-                    if (strpos($actionMsg, $secondLvlKeywords[$l])!=false) {
-                        echo "FOUND";
-                        $durationFlag = true;
+                
+            for ($i = 0; $i < 4; $i++) {
+                    if (stripos($userMsg, $secondLvlKeywords[$i]) !== false ) {
+                        //echo "Match Found -> ($i)";
+                        $action2 = $i;
                     }
                 }
-                
-                if ($durationFlag != true)
-                    $action2 = 0;
-                
-        echo "$action1 on $secondLvlKeywords[$action2]";
-        echo $actionMsg;
+        
+            //echo "<hr><p>Action1: $action1 <br> Action2: $action2</p>";
             
         
         //mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content, seshID) VALUES ('$customerID', '$accountID', '1', '$botMsg', '$seshID')");
