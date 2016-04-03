@@ -56,9 +56,8 @@
 
         <div id='talk-to-me' onclick='openNav()'>
 
-            <p>
+            <p align='center'>
                 <img class='bot-gif' src='assets/bot-thumb.png'>
-                TALK TO LAPRAS
             </p>
 
         </div>
