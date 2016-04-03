@@ -113,6 +113,18 @@ body {
 	margin: 15px 25px;
 }
 
+.up {
+	margin: 15px;
+	position: relative;
+	left: 30px;
+	text-align: center;
+}
+
+.up p {
+	padding: 12px;
+	transition: all 0.2s;
+}
+
 .top-nav img {
 	width: 7%;
 	border-radius: 30px;
@@ -120,7 +132,7 @@ body {
 	border: solid 1px #F7F7F7;
 }
 
-.top-nav p {
+.top-nav-content p {
 	color: #1D2229;
 	float: right;
 	padding: 15px 25px;
@@ -234,11 +246,11 @@ body {
 
 .acct {
 	position: relative;
-    top: 15%;
+    top: 6%;
     left: 25%;
     width: 20%;
     color: #1D2229;
-    margin-top: 15px;
+    margin-top: 40px;
 }
 
 /*.acct img {
@@ -260,9 +272,9 @@ body {
 
 .el {
 	position: relative;
-    top: 18%;
+    top: 9%;
     border-bottom: solid 1px #F7F7F7;
-    width: 25%;
+    width: 67%;
     left: 25%;
     background: #FFFFFF;
     padding: 15px;

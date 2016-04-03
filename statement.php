@@ -105,6 +105,12 @@
 
             </div>
 
+            <div class='up'>
+
+                <p>BANK STATEMENTS</p>
+
+            </div>
+
         </div>
 
         <div class='side-nav'>
