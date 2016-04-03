@@ -46,7 +46,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Lapras | Bank Statements</title>
+    <title>Lapras | Messages</title>
     <link rel='stylesheet' type='text/css' href='style.css'>
     <meta charset='UTF-8'>
 </head>

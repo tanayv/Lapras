@@ -20,7 +20,7 @@
         
         
         //Save user message
-       mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content, seshID) VALUES ('$customerID', '$accountID', '0', '$userMsgEsc', '$seshID')");
+        mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content, seshID) VALUES ('$customerID', '$accountID', '0', '$userMsgEsc', '$seshID')");
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
         
         //$botMsg = mysqli_real_escape_string($connection, "I'm afraid I can't do that Dave");
@@ -75,9 +75,10 @@
             else
                 $botMsg = botThink($action1, $action2);
             
-            echo $botMsg;
+            //echo $botMsg;
+            $botMsgEsc = mysqli_real_escape_string($connection, $botMsg);
             
-        mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content, seshID) VALUES ('$customerID', '$accountID', '1', '$botMsg', '$seshID')");
+        mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content, seshID) VALUES ('$customerID', '$accountID', '1', '$botMsgEsc', '$seshID')");
         echo "<script type = 'text/javascript'>window.location.assign('messages.php');</script>";
 
 ?>
