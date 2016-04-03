@@ -21,8 +21,8 @@
         echo "<p class='acct'> <span class='heading'>" . $arrCustAccs[$i]['nickname'] . "</span><br>
                 <div class='el'> <span class='heading1'> ID </span> <span class='right'> $accountID </span> </div>
                 <div class='el'> <span class='heading1'> Type </span> <span class='right'> $type </span> </div>
-                <div class='el'> <span class='heading1'> Balance </span> <span class='right'> $balance </span> </div>
-                <div class='el'> <span class='heading1'> Rewards </span> <span class='right'> $rewards </span> </div>
+                <div class='el'> <span class='heading1'> Balance </span> <span class='right'> $$balance </span> </div>
+                <div class='el'> <span class='heading1'> Rewards </span> <span class='right'> $$rewards </span> </div>
                 </p> <br>";
     }
     
@@ -36,6 +36,7 @@
     $xml2 = file_get_contents($url2);
     $accBillLog = json_decode($xml2, true);
     
+    
     $sizeArr2 = sizeof($accBillLog);
     $tableHTML1 = "<br><p class='acct'><span class='heading'>Recent Activity</span></p><br><table>
                     <tr>
@@ -45,7 +46,7 @@
                         <th>STATUS</th>
                     </tr>";
     for ($i = 0; $i<$sizeArr2; $i++) {
-        $date = $accBillLog[$i]['creation_date'];
+        $date = $accBillLog[$i]['payment_date'];
         $payee = $accBillLog[$i]['payee'];
         $amount = $accBillLog[$i]['payment_amount'];
         $status = $accBillLog[$i]['status'];

@@ -25,9 +25,12 @@
     
     function botThink($action1, $action2) {
         $botResponse = "";
-        $sampleDate = "2016-04-26";
         
-        //Sort Time Frame out
+        
+        
+        
+        //IMPORTANT FEATURE: Time Frame Decider Based on sample Date [Change in Loop] 
+        $sampleDate = "2016-04-26";
         
         if ($action2 == 0) { //This Week
             $lMonDay = date('Y-m-d',strtotime('-1 Monday'));
