@@ -103,7 +103,7 @@ body {
 	color: #1D2229;
 	width: 100%;
 	height: 12%;
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	left: 0px;
 }
@@ -237,9 +237,22 @@ body {
     top: 15%;
     left: 25%;
     width: 20%;
+    color: #1D2229;
+}
+
+.acct img {
+	width: 5%;
+    vertical-align: middle;
+    margin-right: 20px;
+    padding: 10px;
 }
 
 .heading {
 	font-family: 'Gotham Bold';
 }
 
+.el {
+	float: left;
+	background: #F7F7F7;
+	padding: 20px;
+}
