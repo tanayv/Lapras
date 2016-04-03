@@ -18,7 +18,7 @@
         $balance = $arrCustAccs[$i]['balance'];
         $rewards = $arrCustAccs[$i]['rewards'];
         $type = $arrCustAccs[$i]['type'];
-        echo "<p><b>Account: " . $arrCustAccs[$i]['nickname'] . "</b><br>
+        echo "<p><span class='heading'>Account: " . $arrCustAccs[$i]['nickname'] . "</span><br>
                 ID: $accountID <br>
                 Type: $type <br>
                 Balance: $balance <br>
@@ -38,7 +38,7 @@
     $accBillLog = json_decode($xml2, true);
     
     $sizeArr2 = sizeof($accBillLog);
-    $tableHTML1 = "<br><b>Recent Activity</b><br><table>
+    $tableHTML1 = "<br><span class='heading'>Recent Activity</span><br><table>
                     <tr>
                         <th>Date</th>
                         <th>Payee</th>
@@ -59,7 +59,7 @@
     
     echo $tableHTML1;
     /*
-    echo "<br> <b>Name: " . $accInfo['nickname'] . "</b><BR>";
+    echo "<br> <span class='heading'>Name: " . $accInfo['nickname'] . "</span><BR>";
     echo "Rewards: " . $accInfo['rewards'] . "<BR>";
     echo "Balance: $" . $accInfo['balance'] . "<BR>";
     echo "Type: " . $accInfo['type'] . "<BR>";
@@ -70,7 +70,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Lapras | Dashboard</title>
+    <title>Lapras | Bank Statements</title>
     <link rel='stylesheet' type='text/css' href='style.css'>
     <meta charset='UTF-8'>
 </head>
