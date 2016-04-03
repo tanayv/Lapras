@@ -106,6 +106,8 @@ body {
 	position: fixed;
 	top: 0px;
 	left: 0px;
+	z-index: 1;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
 }
 
 .top-nav-content {
@@ -150,6 +152,7 @@ body {
 	position: fixed;
 	top: 0px;
 	left: 0px;
+	z-index: 2;
 }
 
 .logo img {
@@ -280,7 +283,7 @@ body {
     font-size: 14px;
 }
 
-.el:hover {
+.el:hover, tr:hover {
 	background: #F3F2F2;
     color: #02ACB4;
 }
@@ -291,6 +294,29 @@ body {
 
 table {
 	position: relative;
-	top: -90%;
-	left: 25%;
+    top: 6%;
+    left: 25%;
+	width: 69.5%;
+    text-align: center;
+    color: #02ACB4;
+    /*font-size: 14px;*/
 }
+
+tr {
+	background: #FFF;
+}
+
+td {
+	padding: 10px;
+}
+
+th {
+	padding: 10px;
+	font-family: 'Gotham Bold';
+	font-weight: normal;
+}
+
+
+
+
+
