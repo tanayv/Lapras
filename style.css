@@ -116,8 +116,7 @@ body {
 .up {
 	margin: 15px;
 	position: relative;
-	left: 30px;
-	text-align: center;
+	left: 270px;
 }
 
 .up p {
@@ -288,4 +287,10 @@ body {
 
 .right {
 	float: right;
+}
+
+table {
+	position: relative;
+	top: -90%;
+	left: 25%;
 }
