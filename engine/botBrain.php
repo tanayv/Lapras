@@ -24,22 +24,41 @@
     
     
     function botThink($action1, $action2) {
-        $botResponse = "Test";
+        $botResponse = "";
+        $sampleDate = "2016-04-26";
         
         //Sort Time Frame out
         
         if ($action2 == 0) { //This Week
-            $todayDay = date(N);
+            $lMonDay = date('Y-m-d',strtotime('-1 Monday'));
             
+            if (strtotime($sampleDate) > strtotime($lMonDay)) {
+                //$botResponse .= "Sample Day is in this week";
+                //Add Transaction to list
+            }
+
         }
         
-        elseif ($action2 == 1) {
+        elseif ($action2 == 1) { //Last Week
+            $lMonDay = date('Y-m-d',strtotime('-1 Monday'));
+            $l2MonDay = date('Y-m-d',strtotime('-2 Monday'));
             
+            if ((strtotime($sampleDate) < strtotime($lMonDay)) && (strtotime($sampleDate) > strtotime($l2MonDay))) {
+                //$botResponse .= "Sample Day was in the last week";
+                //Add Transaction to list
+            }
             
         }
         
         elseif ($action2 == 2) {
+            $todayMonth = date(m);
+            $todayYear = date(Y);
+            $arrSamDate = explode("-", $sampleDate);
             
+            if ($arrSamDate[0]==$todayYear && $arrSamDate[1]==$todayMonth) {
+                //botResponse .= "Sample Day is in the same month";
+                //Add Transaction to list
+            }
             
         }
         

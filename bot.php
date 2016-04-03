@@ -64,7 +64,7 @@
                     }
                 }
         
-            //echo "<hr><p>Action1: $action1 <br> Action2: $action2</p>";
+            echo "<hr><p>Action1: $action1 <br> Action2: $action2</p>";
             include 'engine/botBrain.php';
             echo botThink($action1, $action2);
         
