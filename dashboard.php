@@ -59,9 +59,9 @@
 
         <div class='top-nav'>
 
-            <div class="top-nav-content">
+            <div class='top-nav-content'>
 
-                <img src="assets/profile.png">
+                <img src='assets/profile.png'>
                 <p>Siddharth Bhogra</p>
 
             </div>
@@ -70,7 +70,7 @@
 
         <div class='side-nav'>
 
-            <div class="logo">
+            <div class='logo'>
 
                 <img src="assets/logo.png">
 
