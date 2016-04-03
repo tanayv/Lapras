@@ -252,7 +252,9 @@ body {
 }
 
 .el {
-	float: left;
+	position: relative;
+    top: 15%;
+    left: 25%;
 	background: #F7F7F7;
 	padding: 20px;
 }
