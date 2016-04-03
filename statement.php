@@ -19,10 +19,10 @@
         $rewards = $arrCustAccs[$i]['rewards'];
         $type = $arrCustAccs[$i]['type'];
         echo "<p class='acct'><span class='heading'>" . $arrCustAccs[$i]['nickname'] . "</span><br>
-                <div class='el'> ID: $accountID </div> <br>
-                <div class='el'> Type: $type </div> <br>
-                <div class='el'> Balance: $balance </div> <br>
-                <div class='el'> Rewards: $rewards </div> <br>
+                <div class='el'> <span class='heading'> ID </span> <span class='right'>$accountID </span> </div>
+                <div class='el'> <span class='heading'> Type </span> <span class='right'>$type </span> </div>
+                <div class='el'> <span class='heading'> Balance </span> <span class='right'>$balance </span> </div>
+                <div class='el'> <span class='heading'> Rewards </span> <span class='right'>$rewards </span> </div>
                 </p> <br>";
         
     }

@@ -249,12 +249,19 @@ body {
 
 .heading {
 	font-family: 'Gotham Bold';
+	margin-right:30px
 }
 
 .el {
 	position: relative;
-    top: 15%;
+    top: 18%;
+    border-bottom: solid 1px #F7F7F7;
+    width: 25%;
     left: 25%;
-	background: #F7F7F7;
-	padding: 20px;
+    background: #FFFFFF;
+    padding: 15px;
+}
+
+.right {
+	float: right;
 }
