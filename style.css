@@ -238,18 +238,24 @@ body {
     left: 25%;
     width: 20%;
     color: #1D2229;
+    margin-top: 15px;
 }
 
-.acct img {
+/*.acct img {
 	width: 5%;
     vertical-align: middle;
     margin-right: 20px;
     padding: 10px;
-}
+}*/
 
 .heading {
 	font-family: 'Gotham Bold';
-	margin-right:30px
+	color: #00ADB5;
+}
+
+.heading2 {
+	font-family: 'Gotham Bold';
+	margin-right: 30px;
 }
 
 .el {
@@ -260,6 +266,12 @@ body {
     left: 25%;
     background: #FFFFFF;
     padding: 15px;
+    font-size: 14px;
+}
+
+.el:hover {
+	background: #F3F2F2;
+    color: #02ACB4;
 }
 
 .right {
