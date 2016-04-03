@@ -18,7 +18,7 @@
         $balance = $arrCustAccs[$i]['balance'];
         $rewards = $arrCustAccs[$i]['rewards'];
         $type = $arrCustAccs[$i]['type'];
-        echo "<p><span class='heading'>Account: " . $arrCustAccs[$i]['nickname'] . "</span><br>
+        echo "<p class='acct'><span class='heading'>Account: " . $arrCustAccs[$i]['nickname'] . "</span><br>
                 ID: $accountID <br>
                 Type: $type <br>
                 Balance: $balance <br>
@@ -95,7 +95,7 @@
 
         </div>
 
-        <img class='bot-gif' onclick='openNav()' src='assets/lapras-repeat.gif'>
+        <!-- <img class='bot-gif' onclick='openNav()' src='assets/lapras-repeat.gif'> -->
 
         <div class='top-nav'>
 

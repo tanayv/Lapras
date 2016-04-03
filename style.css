@@ -136,7 +136,7 @@ body {
 	color: #FFF;
 	width: 20%;
 	height: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	left: 0px;
 }
@@ -232,7 +232,7 @@ body {
 	width: 40%;
 }
 
-p {
+.acct {
 	position: relative;
     top: 15%;
     left: 25%;
