@@ -2,31 +2,49 @@
     
     include 'engine/connection.php';
     
-    $userMsg = mysqli_real_escape_string($connection, $_POST['userMsg']);
+    $userMsg = $_POST['userMsg'];
+    $userMsgEsc = mysqli_real_escape_string($connection, $userMsg);
     
     //Obtain Variables from Session
     session_start();
     $customerID = $_SESSION['customerID'];
+    $seshID = $_SESSION['seshID'];
     $accountID = '';
         
-        /*
+        
         //Use customerID to find active account
         $query1 = mysqli_query($connection, "SELECT * FROM userData WHERE customerID = '$customerID'");
         while ($row = mysqli_fetch_array($query1)) {
-            $accountID = $row['activAccount'];
+            $accountID = $row['activeAccount'];
         }
-        */
+        
         
         //Save user message
-       mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content) VALUES ('$customerID', 'ABC', '0', '$userMsg')");
+       mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content, seshID) VALUES ('$customerID', '$accountID', '0', '$userMsgEsc', '$seshID')");
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
         
         $botMsg = mysqli_real_escape_string($connection, "I'm afraid I can't do that Dave");
+        
         /*
             BOT PROCESSES USER MESSAGE
+            
+            
+            User Message Analysis
+                1. Break the sentence into an array of words.
+                2. Compare each word with word positions 
+                
+                
+            Question Sets:
+            
+            A. What was my expenditure last week?
+            
         */
         
-        mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content) VALUES ('$customerID', 'ABC', '1', '$botMsg')");
+        $userMsgWord = explode(" ", $userMsg);
+        
+        
+        
+        mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content, seshID) VALUES ('$customerID', '$accountID', '1', '$botMsg', '$seshID')");
         echo "<script type = 'text/javascript'>window.location.assign('dashboard.php');</script>";
 
 ?>

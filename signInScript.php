@@ -15,6 +15,7 @@
         session_start();
         $_SESSION['customerID'] = $customerID;
         echo "<script type = 'text/javascript'>window.location.assign('/');</script>";
+        include 'engine/seshIDCreate.php';
     }
     else
         echo "<script type = 'text/javascript'>window.location.assign('/?error=1');</script>";
