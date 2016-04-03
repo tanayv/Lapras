@@ -14,8 +14,9 @@
     if (strcmp($password, $passCorrect)==0) {
         session_start();
         $_SESSION['customerID'] = $customerID;
-        echo "<script type = 'text/javascript'>window.location.assign('/');</script>";
         include 'engine/seshIDCreate.php';
+        echo "<script type = 'text/javascript'>window.location.assign('load.html');</script>";
+        
     }
     else
         echo "<script type = 'text/javascript'>window.location.assign('/?error=1');</script>";

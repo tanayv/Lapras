@@ -20,7 +20,7 @@
         
         
         //Save user message
-       mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content, seshID) VALUES ('$customerID', '$accountID', '0', '$userMsgEsc', '$seshID')");
+       //mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content, seshID) VALUES ('$customerID', '$accountID', '0', '$userMsgEsc', '$seshID')");
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
         
         $botMsg = mysqli_real_escape_string($connection, "I'm afraid I can't do that Dave");
@@ -43,12 +43,46 @@
         
         //Split message into array of words
         $userMsgWords = explode(" ", $userMsg);
-        for ($i = 0; $i < sizeof($userMsgWords); $i++) { //Perform First Lookup
+        
+        //Load arrays of keywords
+        $firstLvlKeywords = array(
+        array("expenditure", "spending", "spend", "spent"),     //Set action1 = 0
+        array("income", "earnt", "earn", "qwzc", "qwzx"),       //Set action1 = 1
+        array("upcoming", "pending", "subscription", "qwzx"),   //Set action1 = 2
+        array("afford", "qwxz", "qwzx", "qwzx", "qwzx")         //Set action1 = 3
+        );
+        
+        $secondLvlKeywords = array("this week", "last week", "this month");
             
-        }
+            //First level lookup
+            $actionMsg = strtolower($userMsg);
+            
+            for ($j = 0; $j < sizeof($firstLvlKeywords); $j++)
+                for ($k = 0; $k < 4; $k++) {
+                    
+                    if (strpos($actionMsg, $firstLvlKeywords[$j][$k])!=false) {
+                        $action1 = $j;
+                    }
+                }
         
+            //Second level lookup
+                $durationFlag = false;
+                for ($l = 0; $l < 3; $l++) {
+                    
+                    if (strpos($actionMsg, $secondLvlKeywords[$l])!=false) {
+                        $action1 = $i;
+                        $durationFlag = true;
+                    }
+                }
+                
+                if ($durationFlag != true)
+                    $action2 = 0;
+                
+        echo "$action1 on $secondLvlKeywords[$action2] ";
+        echo $actionMsg;
+            
         
-        mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content, seshID) VALUES ('$customerID', '$accountID', '1', '$botMsg', '$seshID')");
-        echo "<script type = 'text/javascript'>window.location.assign('dashboard.php');</script>";
+        //mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content, seshID) VALUES ('$customerID', '$accountID', '1', '$botMsg', '$seshID')");
+        //echo "<script type = 'text/javascript'>window.location.assign('dashboard.php');</script>";
 
 ?>
