@@ -100,7 +100,7 @@
 
             <div class='logo'>
 
-                <img src="assets/logo.png">
+                <img src='assets/logo.png'>
 
             </div>
 

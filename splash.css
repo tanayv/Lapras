@@ -1,16 +1,181 @@
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('assets/Gotham-Light.otf');
+}
+
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url('assets/Gotham-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Porto';
+    src: url('assets/Porto 400.ttf');
+}
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
 body {
-	background: #fff;
+	font-family: 'Gotham Light';
 }
 
-#container {
-	min-height: 1000px;
-	background-image: url(lapras.gif);
-	background-size: 50%;
+.nav {
+	height: 30px;
+	padding: 2% 5%;
+	background: #FFF;
+	position: fixed;
+	width: 90%;
+	z-index: 1;
+	opacity: 0.9;
+}
+
+.nav h1 {
+	font-family: 'Porto';
+	float: left;
+	color: #00ADB5;
+}
+
+.nav ul {
+	float: right;
+	margin-top: 5px;
+}
+
+ul li {
+	list-style: none;
+	display: inline;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: #000;
+	padding: 5px 15px;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.nav ul li a:hover {
+	color: #00ADB5;
+}
+
+.one {
+	background: url(assets/bg.jpg);
 	background-repeat: no-repeat;
+	background-size: 100%;
+	min-height: 640px;
+	position: relative;
+}
+
+.one ul {
 	margin: auto;
+	width: 40%;
+	text-align: center;
+	position: relative;
+	top: 330px;
+}
+
+.one a {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 40px;
+	border: solid 1px #fff;
+	margin: 0 30px;
+	border-radius: 20px;
+	transition: all 0.2s;
+}
+
+.one a:hover {
+	background: #FFF;
+	color: #1D2229;
+}
+
+.two {
+	width: 100%;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	padding: 150px 0;
+	min-height: 300px;
+	background: #F7F7F7;
+}
+
+.two h1 {
+	font-family: 'Porto';
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+.two p {
+	width: 50%;
+	margin: 30px auto;
+	text-align: justify;
+}
+
+.three {
+	width: 100%;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	padding: 80px 0;
+	min-height: 400px;
+	background: #00ADB5;
+	background-size: 100%;
+	color: #fff;
+}
+
+.three h1 {
+	font-family: 'Porto';
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+.three p {
+	width: 50%;
+	margin: 50px auto;
+	text-align: justify;
+}
+
+.four {
+	width: 100%;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	min-height: 500px;
+	background: #1D2229;
+}
+
+.four a {
+	text-decoration: none;
+	position: relative;
+	top: 220px;
+	font-size: 24px;
+	padding: 10px 0;
+	color: #FFF;
+	transition: all 0.2s;
+	font-family: 'Porto';
+}
+
+.four a:hover {
+	color: #00ADB5;
+}
+
+.footer {
+	width: 100%;
+	padding: 50px 0;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	color: #FFF;
+	background: #00ADB5;
+}
+
+.names {
+	transition: all 0.2s;
+	font-family: 'Gotham Bold';
+}
+
+.names:hover {
+	color: #1D2229;
 }

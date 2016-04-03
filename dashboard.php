@@ -63,11 +63,11 @@
             <br>
 
             <div class="pay1">
-                <p> <br><span class='heading'>NETFLIX</span> <br> $10.13 <br> March 02 </p>
+                <p> <br><span class='heading'>NETFLIX</span> <br> $10.13 <br> April 02 </p>
             </div>
 
             <div class="pay2">
-                <p> <br><span class='heading'>SPOTIFY</span> <br> $6.14 <br> March 02 </p>
+                <p> <br><span class='heading'>SPOTIFY</span> <br> $6.14 <br> April 02 </p>
             </div>
 
         </div>  
