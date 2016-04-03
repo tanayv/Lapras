@@ -120,9 +120,6 @@
         function closeNav() {
             document.getElementById('bot-overlay').style.height = '0%';
         }
-        function moveTextBox() {
-            document.getElementById('user-msg').style.top = '80%';
-        }
     </script>
 
 </body>

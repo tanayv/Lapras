@@ -54,7 +54,14 @@
 
         </div>
 
-        <!-- <img class='bot-gif' onclick='openNav()' src='assets/lapras-repeat.gif'> -->
+        <div id='talk-to-me' onclick='openNav()'>
+
+            <p>
+                <img class='bot-gif' src='assets/bot-thumb.png'>
+                TALK TO LAPRAS
+            </p>
+
+        </div>
 
         <div class='top-nav'>
 
@@ -103,9 +110,6 @@
         }
         function closeNav() {
             document.getElementById('bot-overlay').style.height = '0%';
-        }
-        function moveTextBox() {
-            document.getElementById('user-msg').style.top = '80%';
         }
     </script>
 
