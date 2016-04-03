@@ -37,11 +37,15 @@
             Question Sets:
             
             A. What was my expenditure last week?
-            
+                First Lookup -> Expenditure
+                Second Lookup -> Time Frame : last week
         */
         
-        $userMsgWord = explode(" ", $userMsg);
-        
+        //Split message into array of words
+        $userMsgWords = explode(" ", $userMsg);
+        for ($i = 0; $i < sizeof($userMsgWords); $i++) { //Perform First Lookup
+            
+        }
         
         
         mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content, seshID) VALUES ('$customerID', '$accountID', '1', '$botMsg', '$seshID')");
