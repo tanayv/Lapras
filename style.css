@@ -438,6 +438,8 @@ th {
 	float: left;
 	padding: 10px 20px;
 	background: #FFF;
+	font-family: 'Gotham Light';
+	font-size: 14px;
 }
 
 .msg {
@@ -445,5 +447,7 @@ th {
 	padding: 10px 20px;
 	background: #00ADB5;
 	color: #FFF;
+	font-family: 'Gotham Light';
+	font-size: 14px;
 }
 
