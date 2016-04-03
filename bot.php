@@ -70,7 +70,7 @@
                 for ($l = 0; $l < 3; $l++) {
                     
                     if (strpos($actionMsg, $secondLvlKeywords[$l])!=false) {
-                        $action1 = $i;
+                        echo "FOUND";
                         $durationFlag = true;
                     }
                 }
@@ -78,7 +78,7 @@
                 if ($durationFlag != true)
                     $action2 = 0;
                 
-        echo "$action1 on $secondLvlKeywords[$action2] ";
+        echo "$action1 on $secondLvlKeywords[$action2]";
         echo $actionMsg;
             
         
