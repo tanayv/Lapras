@@ -108,3 +108,15 @@ form {
     bottom: -20px;
 }
 
+.power {
+	text-align: center;
+	margin: auto;
+	position: relative;
+	bottom: -220px;
+	color: #1D2229;
+}
+
+.power img {
+	width: 20%;
+	padding: 10px;
+}
