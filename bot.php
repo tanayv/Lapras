@@ -45,15 +45,7 @@
         $userMsgWords = explode(" ", $userMsg);
         
         //Load arrays of keywords
-        $firstLvlKeywords = array(
-        array("expenditure", "spending", "spend", "spent"),     //Set action1 = 0
-        array("income", "earnt", "earn", "qwzc", "qwzx"),       //Set action1 = 1
-        array("upcoming", "pending", "subscription", "qwzx"),   //Set action1 = 2
-        array("afford", "qwxz", "qwzx", "qwzx", "qwzx")         //Set action1 = 3
-        );
-        
-        $secondLvlKeywords = array("this week", "last week", "this month");
-            
+        include 'engine/keywords.php';  
             //First level lookup
             $action1 = -1;
             
@@ -73,7 +65,8 @@
                 }
         
             //echo "<hr><p>Action1: $action1 <br> Action2: $action2</p>";
-            
+            include 'engine/botBrain.php';
+            echo botThink($action1, $action2);
         
         //mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content, seshID) VALUES ('$customerID', '$accountID', '1', '$botMsg', '$seshID')");
         //echo "<script type = 'text/javascript'>window.location.assign('dashboard.php');</script>";
