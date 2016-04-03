@@ -1,10 +1,8 @@
 <?php
-
     session_start();
     
     $customerID = $_SESSION['customerID'];
     echo "Customer ID: " . $customerID . "<BR>";
-
      /* Request 1 
         To: Account
         Parameters: CustomerID
@@ -136,19 +134,15 @@
     </div>
 
     <script type='text/javascript'>
-
         function openNav() {
             document.getElementById('bot-overlay').style.height = '100%';
         }
-
         function closeNav() {
             document.getElementById('bot-overlay').style.height = '0%';
         }
-
         function moveTextBox() {
             document.getElementById('user-msg').style.top = '80%';
         }
-
     </script>
 
 </body>
