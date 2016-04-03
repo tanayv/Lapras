@@ -37,12 +37,12 @@
     $accBillLog = json_decode($xml2, true);
     
     $sizeArr2 = sizeof($accBillLog);
-    $tableHTML1 = "<br><span class='heading'>Recent Activity</span><br><table>
+    $tableHTML1 = "<br><p class='acct'><span class='heading'>Recent Activity</span></p><br><table>
                     <tr>
-                        <th>Date</th>
-                        <th>Payee</th>
-                        <th>Amount</th>
-                        <th>Status</th>
+                        <th>DATE</th>
+                        <th>PAYEE</th>
+                        <th>AMOUNT</th>
+                        <th>STATUS</th>
                     </tr>";
     for ($i = 0; $i<$sizeArr2; $i++) {
         $date = $accBillLog[$i]['creation_date'];

@@ -271,7 +271,7 @@ body {
     font-size: 14px;
 }
 
-.el:hover, tr:hover {
+.el:hover, td:hover {
 	background: #F3F2F2;
     color: #02ACB4;
 }
@@ -288,6 +288,7 @@ table {
     text-align: center;
     color: #1D2229;
     font-size: 14px;
+    margin-bottom: 40px;
 }
 
 tr {
