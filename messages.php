@@ -56,8 +56,10 @@
 
         <div id='talk-to-me' onclick='openNav()'>
 
-            <p align='center'>
-                <img class='bot-gif' src='assets/bot-thumb.png'>
+            <p>
+                <center>
+                    <img class='bot-gif' src='assets/bot-thumb.png'>
+                </center>
             </p>
 
         </div>
