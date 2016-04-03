@@ -435,7 +435,11 @@ th {
 }
 
 .bot-msg {
-	float: left;
+	width: 25%;
+    border-radius: 2px;
+    position: relative;
+    left: 25%;
+    top: 15%;
 	padding: 10px 20px;
 	background: #FFF;
 	font-family: 'Gotham Light';
@@ -443,7 +447,11 @@ th {
 }
 
 .msg {
-	float: right;
+	width: 25%;
+    border-radius: 2px;
+    position: relative;
+    right: -60%;
+    top: 30%;
 	padding: 10px 20px;
 	background: #00ADB5;
 	color: #FFF;
