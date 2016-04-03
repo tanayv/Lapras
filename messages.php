@@ -15,11 +15,11 @@
         
         
         if ($sender == 1) { //Message from bot
-        echo "<p class='bot-msg'><b>Lapras</b><br>$content<br>$timest<br></p>";
+        echo "<p class='bot-msg'><span class='naam'>Lapras</span><br>$content<br>$timest<br></p>";
         }
         
         elseif ($sender == 0 ) { //Message from user
-        echo "<p class='msg'><b>You</b><br>$content<br>$timest<br></p>";
+        echo "<p class='msg'><span class='naam'>You</span><br>$content<br>$timest<br></p>";
         }
         
     }
