@@ -54,12 +54,10 @@
 
         </div>
 
-        <div id='talk-to-me' onclick='openNav()'>
+        <div id='talk-to-me2' onclick='openNav()'>
 
             <p>
-                <center>
-                    <img class='bot-gif' src='assets/bot-thumb.png'>
-                </center>
+                <img class='bot-gif' src='assets/bot-thumb.png'>
             </p>
 
         </div>
