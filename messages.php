@@ -73,7 +73,7 @@
 
             <div class='up'>
 
-                <p>BANK STATEMENTS</p>
+                <p>MESSAGES</p>
 
             </div>
 
