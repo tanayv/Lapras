@@ -2,26 +2,43 @@
 
     include 'engine/connection.php';
     session_start();
-    $customerID = "56c66be6a73e492741507583";
+    $customerID = $_SESSION['customerID'];
     $seshID = $_SESSION['seshID'];
     echo $customerID;
     
+
     $query1 = mysqli_query($connection, "SELECT * FROM botMsg WHERE customerID = '$customerID' ORDER BY time DESC");
     while ($row = mysqli_fetch_array($query1)) {
+        
         
         $content = $row['content'];
         $sender = $row['sender'];
         $timest = $row['time'];
+        $msgSeshID = $row['seshID'];
         
+        $RGBactive = 'rgb(0, 124, 130';
+        $Hexinactive = '#00ADB5';
         
-        if ($sender == 1) { //Message from bot
-        echo "<p class='bot-msg'><span class='naam'>Lapras</span><br>$content<br>$timest<br></p>";
+        if ($seshID != $msgSeshID) {    //Inactive
+            if ($sender == 1) { //Message from bot
+                echo "<p class='bot-msg'><span class='naam'>Lapras</span><br>$content<br>$timest<br></p>";
+            }
+        
+            elseif ($sender == 0 ) { //Message from user
+                echo "<p class='msg' style='background-color: $Hexinactive'><span class='naam'>You</span><br>$content<br>$timest<br></p>";    
+            }
         }
         
-        elseif ($sender == 0 ) { //Message from user
-        echo "<p class='msg'><span class='naam'>You</span><br>$content<br>$timest<br></p>";
-        }
+        else {                      //Active
         
+            if ($sender == 1) { //Message from bot
+                echo "<p class='bot-msg'><span class='naam'>Lapras</span><br>$content<br>$timest<br></p>";
+            }
+        
+            elseif ($sender == 0 ) { //Message from user
+            echo "<p class='msg' style='background-color: $RGBactive'><span class='naam'>You</span><br>$content<br>$timest<br></p>";
+            }
+        }
     }
 
 ?>

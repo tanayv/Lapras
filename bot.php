@@ -64,11 +64,20 @@
                     }
                 }
         
-            //echo "<hr><p>Action1: $action1 <br> Action2: $action2</p>";
-            include 'engine/botBrain.php';
-            $botMsg = botThink($action1, $action2);
-        
+            echo "<hr><p>Action1: $action1 <br> Action2: $action2</p>";
+            
+            include 'engine/botBrain1.php';
+            include 'engine/botBrain2.php';
+            
+            if ($action1 == 3) 
+                $botMsg = botThinkAdv($action1);
+            
+            else
+                $botMsg = botThink($action1, $action2);
+            
+            echo $botMsg;
+            
         mysqli_query($connection, "INSERT INTO botMsg (customerID, accountID, sender, content, seshID) VALUES ('$customerID', '$accountID', '1', '$botMsg', '$seshID')");
-        echo "<script type = 'text/javascript'>window.location.assign('dashboard.php');</script>";
+        echo "<script type = 'text/javascript'>window.location.assign('messages.php');</script>";
 
 ?>
