@@ -35,7 +35,42 @@
 
         </div>
 
-        <img class='bot-gif' onclick='openNav()' src='assets/lapras-repeat.gif'>
+        <div id='talk-to-me' onclick='openNav()'>
+
+            <p>
+                <img class='bot-gif' src='assets/bot-thumb.png'>
+                TALK TO LAPRAS
+            </p>
+
+        </div>
+
+        <div id='upcoming'> 
+
+            <p>UPCOMING PAYMENTS</p>
+
+            <br>
+
+            <div class="pay">
+                <p> <br><span class='heading'>XBOXLIVE</span> <br> $6.15 <br> April 14 </p>
+            </div>
+
+        </div>  
+
+        <div id='paid'> 
+
+            <p>RECENT PAYMENTS</p>
+
+            <br>
+
+            <div class="pay1">
+                <p> <br><span class='heading'>NETFLIX</span> <br> $10.13 <br> March 02 </p>
+            </div>
+
+            <div class="pay2">
+                <p> <br><span class='heading'>SPOTIFY</span> <br> $6.14 <br> March 02 </p>
+            </div>
+
+        </div>  
 
         <div class='top-nav'>
 
@@ -58,7 +93,7 @@
 
             <div class='logo'>
 
-                <img src="assets/logo.png">
+                <img src='assets/logo.png'>
 
             </div>
 
@@ -66,7 +101,7 @@
                 <li><a href='#'><img src='assets/home.png'>HOME</a></li>
                 <!-- <li><a href='#'><img src='assets/account.png'>ACCOUNTS</a></li> -->
                 <li><a href='statement.php'><img src='assets/vault.png'>BANK STATEMENTS</a></li>
-                <li><a href='#'><img src='assets/message.png'>MESSAGES</a></li>
+                <li><a href='message.php'><img src='assets/message.png'>MESSAGES</a></li>
             </ul>
 
             <div class='sign-out'>

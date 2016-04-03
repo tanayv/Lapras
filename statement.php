@@ -126,7 +126,7 @@
                 <li><a href='dashboard.php'><img src='assets/home.png'>HOME</a></li>
                 <!-- <li><a href='#'><img src='assets/account.png'>ACCOUNTS</a></li> -->
                 <li><a href='#'><img src='assets/vault.png'>BANK STATEMENTS</a></li>
-                <li><a href='#'><img src='assets/message.png'>MESSAGES</a></li>
+                <li><a href='message.php'><img src='assets/message.png'>MESSAGES</a></li>
             </ul>
 
             <div class='sign-out'>

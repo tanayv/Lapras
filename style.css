@@ -31,7 +31,6 @@ body {
     top: 0;
     left: 0;
     background-color: rgb(255, 255, 255);
-    /*background-color: rgba(255, 255, 255, 0.9);*/
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -65,12 +64,43 @@ body {
     right: 43px;
 }
 
+#talk-to-me {
+	padding: 1% 0;
+    margin: 5%;
+    border-bottom: solid 1px rgba(29, 34, 41, 0.07);
+    width: 70%;
+    float: right;
+    position: relative;
+    top: 10px;
+    font-size: 28px;
+    background: url(assets/bot-thumb.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 2%;
+    transition: all 0.2s;
+}
+
+#talk-to-me p {
+	transition: all 0.2s;
+}
+
+#talk-to-me:hover p {
+	color: #00ADB5;
+}
+
+#talk-to-me:hover {
+	background: url(assets/bot.gif);
+	background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: 2%;
+}
+
 .bot-gif {
-	position: absolute;
-	top: 15%;
-	left: 25%;
-	width: 5%;
-	border-radius: 50px;
+	width: 10%;
+	border-radius: 500px;
+	vertical-align: middle;
+	margin: 0 30px;
+	opacity: 0;
 }
 
 .bot {	
@@ -108,6 +138,105 @@ body {
 .top-nav-content {
 	float: right;
 	margin: 15px 25px;
+}
+
+#upcoming {
+	position: relative;
+	top: 210px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	left: 25%;
+	width: 70%;
+	border-bottom: solid 1px rgba(29, 34, 41, 0.07);
+}
+
+.pay p {
+	opacity: 0.0;
+	transition: all 0.2s;
+	text-align: center;
+	padding: 30px;
+}
+
+.pay {
+	width: 150px;
+	height: 150px;
+	color: #fff;
+	background: url(assets/xbox.png);
+	background-size: 100%;
+	transition: all 0.2s;
+	border-radius: 100px;
+}
+
+.pay:hover {
+	background: url(assets/xbox-over.png);
+	background-size: 100%;
+}
+
+.pay:hover p {
+	opacity: 1.0;
+}
+
+.pay1 p {
+	opacity: 0.0;
+	transition: all 0.2s;
+	text-align: center;
+	padding: 30px;
+}
+
+#paid {
+	position: relative;
+	top: 230px;
+	padding-left: 20px;
+	left: 25%;
+	width: 70%;
+}
+
+.pay1 {
+	width: 150px;
+	height: 150px;
+	color: #fff;
+	background: url(assets/netflix.png);
+	background-size: 100%;
+	transition: all 0.2s;
+	border-radius: 100px;
+	float: left;
+}
+
+.pay1:hover {
+	background: url(assets/netflix-over.png);
+	background-size: 100%;
+}
+
+.pay1:hover p {
+	opacity: 1.0;
+}
+
+.pay2 p {
+	opacity: 0.0;
+	transition: all 0.2s;
+	text-align: center;
+	padding: 30px;
+}
+
+.pay2 {
+	width: 150px;
+	height: 150px;
+	color: #fff;
+	background: url(assets/spotify.png);
+	background-size: 100%;
+	transition: all 0.2s;
+	border-radius: 100px;
+	float: left;
+	margin-left: 50px;
+}
+
+.pay2:hover {
+	background: url(assets/spotify-over.png);
+	background-size: 100%;
+}
+
+.pay2:hover p {
+	opacity: 1.0;
 }
 
 .up {
@@ -304,8 +433,3 @@ th {
 	font-family: 'Gotham Bold';
 	font-weight: normal;
 }
-
-
-
-
-
