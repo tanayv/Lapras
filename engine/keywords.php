@@ -7,7 +7,7 @@
         array("afford", "qwxz", "qwzx", "qwzx", "qwzx")         //Set action1 = 3
         );
         
-        $secondLvlKeywords = array("this week", "last week", "this month");
+        $secondLvlKeywords = array("this week", "last week", "this month", "last month");
           
 
 ?>
